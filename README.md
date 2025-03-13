@@ -6,3 +6,6 @@ The main file is the Plot_MHD.py it creates these Compilation pictures of all th
 
 The plot_MHD.py file has options at the begining to save, use latex font and change the plot range. If saving is set to false the interactive window has sliders to modify the plot in real time, but be patient.
 ![screenshot](Compilation.png)
+
+The boundary visualizations:
+![screenshot](PerpShock.png)
