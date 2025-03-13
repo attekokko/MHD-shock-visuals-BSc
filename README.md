@@ -5,4 +5,4 @@ The main file is the Plot_MHD.py it creates these Compilation pictures of all th
 - J. P. Goedbloed, Rony Keppens, and Stefaan Poedts. Advanced magnetohydrodynamics: with applications to laboratory and astrophysical plasmas. Cambridge University Press, Cambridge, 2010.
 
 The plot_MHD.py file has options at the begining to save, use latex font and change the plot range. If saving is set to false the interactive window has sliders to modify the plot in real time, but be patient.
-![alt text](https://github.com/attekokko/MHD-shock-visuals-BSc/main/Compliation.png](https://github.com/attekokko/MHD-shock-visuals-BSc/blob/main/Compilation.png)
+![screenshot](Compliation.png)
