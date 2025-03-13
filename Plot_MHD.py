@@ -14,7 +14,7 @@ Latex = True                    #use latex font
 Titels = False                  #title for everyplot
 Hypersoniclimit = False         #plots upto M1=20.3 (M1Range)
 HypersoniclimitValue = 20.5     # M1 max
-SavePic = True                 #saves the plot without showing 
+SavePic = False                 #saves the plot without showing 
 SavePicName = 'Compilation.png'
 Color = True                    #slow,fast,interm. regions colored (does not work with Goeldbloed=True)
 Goeldbloed = False              #changes x axis to m1^2 for comparing with Goeldbloeds plots
@@ -35,8 +35,7 @@ def F(M1, M2, theta1, beta1, gamma):
 def G(M1, M2, theta1, beta1):
     '''entropy condition G(M1,M2) (>= 0 taken later)'''
     # beta1 = beta1*(1+np.tan(theta1)**2)
-    equation = (M2**2 - 1)**2 * (M1**2 - M2**2 - beta1/2*((M1**2/M2**2)**gamma - 1)) 
-    - np.tan(theta1)**2/2 * (M1**2 - M2**2)*(M1**2 + M2**2 - 2)
+    equation = (M2**2 - 1)**2 * (M1**2 - M2**2 - beta1/2*((M1**2/M2**2)**gamma - 1)) - np.tan(theta1)**2/2 * (M1**2 - M2**2)*(M1**2 + M2**2 - 2)
     # print('where nan', np.argwhere(np.isnan(equation)))
     return np.nan_to_num(equation, nan=-np.inf) #is nan at M2=0
 
